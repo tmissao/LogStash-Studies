@@ -55,3 +55,12 @@ mv logstash-7.12.1 logstash
   -p 8080:8080 \
   docker.elastic.co/logstash/logstash:7.12.1
 ```
+
+## AutoReload Configuration
+---
+
+```bash
+#bin/logstash -f <pipeline-config-path> --config.reload.automatic
+
+bin/logstash -f config/pipelines/pipeline.conf --config.reload.automatic
+```
