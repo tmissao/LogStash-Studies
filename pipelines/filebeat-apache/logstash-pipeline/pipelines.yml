@@ -1,0 +1,2 @@
+- pipeline.id: access_logs
+  path.config: /home/missao/logstash/logstash/config/pipelines/access.conf
