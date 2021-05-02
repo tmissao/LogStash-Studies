@@ -94,7 +94,17 @@ curl -XPUT -H 'Content-Type: application/json' -u <user:password> http://<elasti
 
  [LogstashPipeline](./pipelines/filebeat-apache/logstash-pipeline/access.conf)
 
+
+## Using Filebeat without a Module
+---
+
+To use filebeat without using a module is simple, just modify the file `filebeat.yml` under `filebeat.inputs` and the `log` type with the custom values:
+
+![Example](./artifacts/04-FileBeatCustomModule.png)
+
 ## Utils
 ---
 
 - [Filebeat Inputs Types](https://www.elastic.co/guide/en/beats/filebeat/current/configuration-filebeat-options.html#filebeat-input-types)
+
+- [Converting Ingestion Pipeline to Logstash](https://www.elastic.co/guide/en/logstash/current/ingest-converter.html) 
